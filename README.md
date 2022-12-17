@@ -20,3 +20,4 @@
 - 本程序**仅支持 Windows**
 - 注意不要做出违反开源许可的行为
 - 如需商用、二次运营或在任何地方重新公开使用该项目，应注明：`该项目基于小张软件开发的notems-protector，详细请访问：https://github.com/MrZhang365/notems-protector`
+- 这玩意就是个垃圾代码，整个项目就是个超级BUG，千万不要star和fork！更不要下载！！！
