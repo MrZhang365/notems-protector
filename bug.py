@@ -3,19 +3,28 @@
 
 
 开发团队：小张软件ZhangSoft ( 官方网站：https://www.zhangsoft.cf/ GitHub：https://github.com/ZhangSoftTeam )
+修改；灯确吉L（offical site: dqjl.eu.org , dqj.lol . contact me at light689@163.com or bilibili 灯确吉L）
 鸣谢用户：MaggieLOL ( 个人博客：https://www.thz.cool GitHub：https://github.com/MaggieLOL )
 '''
-
 from selenium import webdriver
 from time import sleep as zzz
+import txt
 
-targetName = 'target'    #改成目标剪贴板的名称
+targetName = 'target' # 保护目标
+force_editing = False # 不要知道这是什么……
 
-driver = webdriver.Edge('请在此处放置Edge浏览器的驱动的路径')    #可以改成其他浏览器
-driver.get('https://note.ms/'+targetName)
-c=driver.find_element('xpath',"/html/body/div[1]/div[1]/div/div/textarea")
+url = f'https://note.ms/{targetName}'
+if force_editing:
+    url += '?force-editing=true'
 
-print('note.ms保护装置即将在5秒后启动！目标剪贴板名称：'+targetName)
+driver = webdriver.Edge('请在此处放置Edge浏览器的驱动的路径')
+driver.get(url)
+
+c = driver.find_element('xpath', "/html/body/div[1]/div[1]/div/div/textarea")
+
+print(txt.overlay_text)
+
+print(f'note.ms保护装置即将在5秒后启动！目标剪贴板名称：{targetName} 0号编辑：{force_editing}')
 zzz(5)
 print('已启动！')
 
