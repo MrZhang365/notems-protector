@@ -11,9 +11,9 @@ from selenium.webdriver.edge.service import Service
 from time import sleep as zzz
 import txt
 
-targetName = 'target'
-force_editing = True
-driver_path = r'C:\msedgedriver.exe'
+targetName = 'target' # 这里改成要保护的页面
+force_editing = True # 保持为 False
+driver_path = r'C:\msedgedriver.exe' # 改成webdriver的位置
 
 url = f'https://note.ms/{targetName}'
 if force_editing:
