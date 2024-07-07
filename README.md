@@ -20,4 +20,5 @@
 ## 注意事项  
 - 本程序**仅支持 Windows**
 - 注意不要做出违反开源许可的行为
-- 感谢MrZhang365创作的原代码 awa
+- 如需商用、二次运营或在任何地方重新公开使用该项目，应注明：`该项目基于小张软件开发的notems-protector，详细请访问：https://github.com/MrZhang365/notems-protector`
+- 这玩意就是个辣鸡代码，不欢迎 ![Star](https://img.shields.io/github/stars/MrZhang365/notems-protector.svg) 和 ![Fork](https://img.shields.io/github/forks/MrZhang365/notems-protector.svg) ！！！
