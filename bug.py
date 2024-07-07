@@ -7,29 +7,33 @@
 鸣谢用户：MaggieLOL ( 个人博客：https://www.thz.cool GitHub：https://github.com/MaggieLOL )
 '''
 from selenium import webdriver
+from selenium.webdriver.edge.service import Service
 from time import sleep as zzz
-import txt.py
+import txt
 
-targetName = 'target' # 保护目标
-force_editing = False # 不要知道这是什么……
+targetName = 'target'
+force_editing = True
+driver_path = r'C:\msedgedriver.exe'
 
 url = f'https://note.ms/{targetName}'
 if force_editing:
     url += '?force-editing=true'
 
-driver = webdriver.Edge('请在此处放置Edge浏览器的驱动的路径')
+service = Service(driver_path)
+driver = webdriver.Edge(service=service)
 driver.get(url)
 
 c = driver.find_element('xpath', "/html/body/div[1]/div[1]/div/div/textarea")
 
 print(txt.overlay_text)
 
-print(f'note.ms保护装置即将在5秒后启动！目标剪贴板名称：{targetName} 0号编辑：{force_editing}')
+print(f'note.ms保护装置即将在5秒后启动！目标剪贴板名称：{targetName}')
 zzz(5)
 print('已启动！')
 
 while True:
     zzz(0.5)
-    c.send_keys('a')
+    c.send_keys(txt.overlay_text)
     zzz(0.5)
-    c.send_keys('\b')
+    c.clear()
+
