@@ -14,7 +14,8 @@
 1. 克隆这个仓库到本地
 2. 切换到仓库的目录
 3. 根据 `bug.py` 里面的注释配置程序。注意，你必须安装 `Python3` `selenium库`，下载所需要的webdriver
-4. 执行 `python3 bug.py` ，启动程序
+4. 修改 `txt.py` 来自行修改保护内容
+5. 执行 `python3 bug.py` ，启动程序
 
 ## 注意事项  
 - 本程序**仅支持 Windows**
