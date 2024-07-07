@@ -3,12 +3,12 @@
 
 
 开发团队：小张软件ZhangSoft ( 官方网站：https://www.zhangsoft.cf/ GitHub：https://github.com/ZhangSoftTeam )
-修改；灯确吉L（offical site: dqjl.eu.org , dqj.lol . contact me at light689@163.com or bilibili 灯确吉L）
+修改；灯确吉L（offical site: dqjl.eu.org , dqj.lol contact me at light689@163.com or bilibili 灯确吉L Github: https://github.com/lightworld689）
 鸣谢用户：MaggieLOL ( 个人博客：https://www.thz.cool GitHub：https://github.com/MaggieLOL )
 '''
 from selenium import webdriver
 from time import sleep as zzz
-import txt
+import txt.py
 
 targetName = 'target' # 保护目标
 force_editing = False # 不要知道这是什么……
